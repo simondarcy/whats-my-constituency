@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Whats My Constituency?</title>
+    <link rel="stylesheet" href="css/myconst.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+
+    <script type="text/javascript" src="js/myconst.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Whats My Constituency?</h1>
+        <p>Enter your town or full address below and hit search</p>
+        <input class="search" type="text" id="address" placeholder='Search by address. Example: "Donnybrook, Dublin"' value="">
+        <button class="black_btn" id="submit">Search</button>
+        <button class="black_btn" id="submitbyloc">Use my location</button>
+        <h1 class="h1" id="result" style="display: none;"></h1>
+        <div id="map"></div>
+    </div>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHuqDxSCpHnwbnJgc3vIii2PFhkP4wkcQ&signed_in=true&libraries=geometry&callback=initMap" async defer></script>
+</body>
+</html>
